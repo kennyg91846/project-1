@@ -23,7 +23,6 @@ jobs:
           path: .buildozer_globalDrag and drop operation from guest to host failed.
 
 DnD: Error: Requesting pending data from guest failed (VERR_TIMEOUT).
-
 Result Code:VBOX_E_DND_ERROR (0X80BB0011)
 Component:GuestDnDSourceWrap
 Interface:IGuestDnDSource {dedfb5d9-4c1b-edf7-fdf3-c1be6827dc28}
