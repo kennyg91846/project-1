@@ -16,9 +16,9 @@ class Interface(FloatLayout):
         try:
             # Split by hyphen and convert each hex value to character
             parts = data.split('-')
-            result = ''.join(chr(int(p, 16)) for p in parts if p)
+            result = ''.join(chr(int(p.strip(), 16)) for p in parts if p.strip())
             self.ids.label.text = result
-        except (ValueError, OverflowError):
+        except (ValueError, OverflowError, TypeError):
             self.ids.label.text = 'Invalid hex input'
         
 class ProjectApp(App):
