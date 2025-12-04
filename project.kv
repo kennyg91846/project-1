@@ -3,7 +3,7 @@ Interface:
     TextInput:
         id: textinput
         size_hint: 0.5, 0.1
-        pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+        pos_hint: {'center_x': 0.5, 'center_y': 0.65}
         multiline: False 
         text: ''
 
@@ -15,7 +15,13 @@ Interface:
         text: 'Coming Info'
 
     Button:
-        text: 'Press Me'
+        text: 'Display Text'
         size_hint: 0.5, 0.1
         pos_hint: {'center_x': 0.5, 'center_y': 0.4}
         on_press: root.display_information()
+
+    Button:
+        text: 'Process Hex'
+        size_hint: 0.5, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.28}
+        on_press: root.process_hex_data()
